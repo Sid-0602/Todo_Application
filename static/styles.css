@@ -1,0 +1,40 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
+}
+
+
+
+.content{
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+}
+
+table {
+    border: 2px black solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.developed{
+    margin: auto;
+    text-align: center;
+}
