@@ -8,10 +8,18 @@
 {% block body %}
 
 <div class="content">
-    <h1>ToDoPro</h1>
+    <h1 style="color: yellow;font-size:xxx-large">ToDoPro</h1>
+
+
     {% if tasks|length<1 %}
     <h4 style="text-align: center;">There are no current Tasks!! Create First Task below</h4>
     {%else%}
+
+    <form action="/" method="POST" style="text-align: center;">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task">
+    </form>
+    <br>
     <table>
 
         <tr>
@@ -38,10 +46,7 @@
     </table>
     {%endif%}
     <br>
-    <form action="/" method="POST" style="text-align: center;">
-        <input type="text" name="content" id="content">
-        <input type="submit" value="Add Task">
-    </form>
+   
 </div>
 
 <div class="developed">
